@@ -29,7 +29,7 @@ def killpb (result):
             print(title_result)
             i = str(i)
             url = re.search(p_url,i).group(0)
-            url = 'http://www.397907.com'+url
+            url = 'http://www.wzwood.com'+url
             head = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'}
             m3u8 = requests.get(url,headers = head)
             m3u8 = m3u8.text
