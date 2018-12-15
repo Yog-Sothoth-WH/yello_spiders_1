@@ -8,7 +8,7 @@ import sys
 import re
 import os
 
-ulrlist = ['http://www.397907.com/video/30.html','http://www.397907.com/video/31.html','http://www.397907.com/video/31/2.html','http://www.397907.com/video/52/2.html','http://www.397907.com/video/52/3.html','http://www.397907.com/video/52/4.html','http://www.397907.com/video/52.html',]
+ulrlist = ['http://www.wzwood.com/video/30.html','http://www.wzwood.com/video/31.html','http://www.wzwood.com/video/31/2.html','http://www.wzwood.com/video/52/2.html','http://www.wzwood.com/video/52/3.html','http://www.wzwood.com/video/52/4.html','http://www.wzwood.com/video/52.html',]
 def getall(url):
     req = requests.get(url)
     #print(req.text)
@@ -42,7 +42,7 @@ def killpb (result):
             
             m3u8_result_1 = m3u8_result_1.replace('vMp4url = "','')
             m3u8_result_2 = m3u8_result_2.replace('video: \'','')
-            m3u8_result_1 = 'http://www.637930.com'+m3u8_result_1
+            m3u8_result_1 = 'http://www.wzwood.com'+m3u8_result_1
             print(m3u8_result_1)
             print(m3u8_result_2)
             status_m3u8_1 = requests.get(m3u8_result_1,timeout = 3)
